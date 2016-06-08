@@ -69,7 +69,7 @@ int main(int argc, string argv[])
                     if (SetSortDirection(argv[1], argv[j][0], argv[j + 1][0]))
                     {
                         elem_storage = argv[j];
-                        argv[j]  = argv[j + 1];
+                        argv[j]      = argv[j + 1];
                         argv[j + 1]  = elem_storage;
                     }
                     else
