@@ -1,5 +1,5 @@
 /**
-*  File  :: bubble.c
+*  File: bubble.c
 *
 *  Desc  :: Sorts an array of chars by ASCII code in order specified by a key.
 *           Uses optimized bubble sort algorithm.
@@ -95,24 +95,31 @@ int main(int argc, string argv[])
 }
 
 /**
-*  Func  :: SetSortDirection
+*  Function Name: SetSortDirection
 *
-*  Desc  :: Sets the sort direction depending on the order key. Compares two
-*           characters.
+*  Description:
+*      Sets the sort direction depending on the order key. Compares two characters
+*      using their ASCII codes.
 *        
-*  Input :: order_key : type           : string;
-*                       accepted values: -a for ascending order,
-*                                        -d for descending order;
+*  Arguments:
+*      order_key:
+*          type: string;
+*          accepted values: "-a" defines ascending order,
+*                           "-d" defines descending order;
+*          description: the key is used to specify the sort order.
 *
-*           character1: type           : char;
-*                       accepted values: set of chars separated by spaces;
+*     character1:
+*         type: char;
+*         accepted values: set of chars separated by spaces;
+*         description: one of two characters to be compared.
 *
-*           character2: type           : char;
-*                       accepted values: set of chars separated by spaces;
+*     character2:
+*         type: char;
+*         accepted values: set of chars separated by spaces;
+*         description: the other character.
 *
-*  Output:: output    : type           : integer;
-*                       accepted values: 0 as a negative result of comparison,
-*                                        1 as a positive result of comparison;
+*  Returns:
+*      0 as a negative result of comparison, 1 as a positive result of comparison.
 */
 int SetSortDirection(string order_key, char character1, char character2)
 {
